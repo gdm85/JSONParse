@@ -3,9 +3,9 @@
 Parser and schema validator for json schema draft v4
 
 ```
-go get github.com/rmullinnix/JSONParse
+go get github.com/gdm85/JSONParse
 ```
-GoDoc: https://godoc.org/github.com/rmullinnix/JSONParse
+GoDoc: https://godoc.org/github.com/gdm85/JSONParse
 
 In addition to the library, there are three cmd files that perform the basic operations
 * **jp-pretty** - output input file as formatted json

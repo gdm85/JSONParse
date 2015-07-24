@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
-	"github.com/rmullinnix/JSONParse"
 	"flag"
+	"fmt"
+	"github.com/gdm85/JSONParse"
 	"os"
-//	"strings"
+	//	"strings"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 	level := *levelPtr
 
 	fmt.Println("parse file", file)
-	var parser	*JSONParse.JSONParser
+	var parser *JSONParse.JSONParser
 	if len(file) > 0 {
 		parser = JSONParse.NewJSONParser(file, maxError, level)
 		valDoc, errs := parser.Parse()
@@ -44,6 +44,6 @@ func main() {
 			os.Exit(1)
 		}
 	}
-	
+
 	fmt.Println("  -documente is valid against schema")
 }

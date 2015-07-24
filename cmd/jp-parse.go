@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"github.com/rmullinnix/JSONParse"
 	"flag"
-//	"strings"
+	"fmt"
+	"github.com/gdm85/JSONParse"
+	//	"strings"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 	level := *levelPtr
 
 	fmt.Println("file", file)
-	var parser	*JSONParse.JSONParser
+	var parser *JSONParse.JSONParser
 	if len(file) > 0 {
 		parser = JSONParse.NewJSONParser(file, maxError, level)
 		valDoc, errs := parser.Parse()
